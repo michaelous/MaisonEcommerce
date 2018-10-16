@@ -1,0 +1,235 @@
+@media screen and (max-width: 1400px) {
+  .lp{
+    .carousel{
+      .slide{
+        .slide__info  {
+          right: 10%;
+        }
+      }
+    }
+  }
+    .main {
+      .sidebar__menu{
+        display: none;
+      }
+      .content__container {
+      padding: 50px 0px 50px 0px;
+      .toggle-content{
+        display: flex;
+      }
+        .sort__container{
+          .sort{
+            font-size: 18px;
+          }
+        }
+      .categories__toggle{
+        display: flex;
+      }
+    }
+  }
+
+  .newsletter__container{
+    .wrapper{
+      padding: 50px 20px 50px 20px;
+      .newsletter__box {
+        flex-direction: column;
+        height: 120px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
+  .wrapper{
+    width: auto;
+    .main{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .content__container{
+        padding: 50px 0px 50px 0px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav{
+      height: calc(50px + 5vw);
+      background: white;
+    .nav__inside-container{
+      .shop__name{
+        display: flex;
+      }
+      .logo__container{
+        .logo{
+          display: none;
+        }
+        .toggleBtn{
+          .hamburger{
+            display: flex;
+            height: 35px;
+            width: 35px;
+          }
+        }
+      }
+      .nav__bar{
+        .nav__item{
+          display: none;
+        }
+        .cart{
+          display: flex;
+        }
+      }
+
+    }
+  }
+
+  .lp{
+    .carousel{
+      .slide{
+        .slide__info  {
+          width: 300px;
+          align-items: center;
+          right: calc(50% - 150px);
+          bottom: 20%;
+        }
+      }
+      .slide_1{
+        background-position: 55% 10%;
+        background-size: calc(200px + 70vw);
+      }
+      .slide_2{
+        background-position: 50% 10%;
+        background-size: calc(200px + 45vw);
+
+      }
+      .slide_3{
+        background-position: 65% 50%;
+        background-size: 60vw;
+      }
+    }
+  }
+
+  .wrapper{
+    .main{
+      .content__container{
+        .categories__toggle{
+          margin: 10px;
+        }
+        .product__container{
+          margin: 50px 0px 50px 0px;
+          .product{
+            height: calc(130px + 30vw);
+            width: calc(50px + 30vw);
+            .name{
+              left: 10px;
+              bottom: 30px;
+            }
+            .price{
+              bottom:10px;
+              left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .newsletter__container{
+    .wrapper{
+      .newsletter__box {
+        flex-direction: column;
+        height: 120px;
+        .discount{
+          font-size: 35px;
+        }
+        .input__container{
+          width: 100%;
+          max-width: 670px;
+          .newsletter__email{
+            width: 70%;
+          }
+          .newsletter__submit{
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__container{
+    .newsletter__popup{
+      width: 80vw;
+      left: calc(50% - 40vw);
+      font-size: 20px;
+      text-align: center;
+      }
+    .wrapper{
+      .footer__box{
+        flex-direction: column-reverse;
+        height: 70px;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .nav{
+    background-color: rgba(254, 254, 254, 0.996);
+    box-shadow: rgba(17, 17, 17, 0.55) 0px 13px 13px -16px;
+    height: 60px;
+    .nav__inside-container{
+      .logo__container{
+        .toggleBtn{
+          top: 8px;
+        }
+      }
+    }
+  }
+.wrapper{
+  .main{
+    .content__container{
+      .product__container{
+        .product{
+            .name{
+              font-size: 14px;
+              left: 5px;
+              bottom: 25px;
+            }
+            .price{
+              font-size: 14px;
+              bottom: 5px;
+              left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .lp{
+    .carousel{
+      .arrow{
+        display: none;
+      }
+    }
+  }
+
+  .footer__container{
+    .wrapper{
+      .footer__box{
+        .footer__nav-container{
+          width: 90vw;
+          }
+        }
+      }
+    }
+  }
