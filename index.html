@@ -19,9 +19,9 @@
         </div>
       </div>
       <div class="nav__bar">
-        <a href="" class="nav__item">home</a>
-        <a href="" class="nav__item">shop</a>
-        <a href="" class="nav__item">journal</a>
+        <a href="#home" class="nav__item">home</a>
+        <a href="#shop" class="nav__item">shop</a>
+        <a href="#newsletter" class="nav__item">journal</a>
         <a href="" class="nav__item">elements</a>
         <a href="" class="nav__item">pages</a>
         <a href="https://michaelous.github.io/Maison_v1/" class="cart nav__item">
@@ -34,10 +34,10 @@
 
       <div class="menu__container">
         <div class="menu__items">
-          <p class="menu__item">Home</p>
-          <p class="menu__item">Events</p>
-          <p class="menu__item">About</p>
-          <p class="menu__item">Contact</p>
+          <a href="" class="menu__item">Home</a>
+          <a href="" class="menu__item">Events</a>
+          <a href="" class="menu__item">About</a>
+          <a href="" class="menu__item">Contact</a>
         </div>
         <div class="socials">
         <p class="social">Socials</p>
@@ -92,16 +92,16 @@
   <div class="main">
     <div class="sidebar__menu">
       <div class="categories__button">
-        <p class="strong">Categories</p>
+        <p class="strong" id="shop">Categories</p>
       </div>
       <div class="categories">
-        <p class="category">All products</p>
+        <p class="category all_products" id="all_products">All products</p>
         <p class="category">Living</p>
         <p class="category">Dining</p>
-        <p class="category">Furtniture</p>
+        <p class="category">Furniture</p>
         <p class="category">Lighting</p>
         <p class="category">Technics</p>
-        <p class="category">Accesorries</p>
+        <p class="category">Accessories</p>
       </div>
 
       <div class="filter__container">
@@ -109,10 +109,10 @@
         <p class="filterbyprice">Price</p>
         <div class="filter__cont">
           <div class="price__container">
-            <input class="min__price price"></input>
-            <input class="max__price price"></input>
+            <input class="min__price" id="min"></input>
+            <input class="max__price" id="max"></input>
           </div>
-          <button class="btn__filter">Filter</button>
+          <button class="btn__filter" id="sort__filter">Filter</button>
         </div>
 
         <div class="color__cont">
@@ -207,19 +207,19 @@
 
       <div class="toggle-content" id="toggle">
             <div class="categories">
-              <p class="category">All products</p>
+              <p class="category all_products" id="all_products">All products</p>
               <p class="category">Living</p>
               <p class="category">Dining</p>
-              <p class="category">Furtniture</p>
+              <p class="category">Furniture</p>
               <p class="category">Lighting</p>
               <p class="category">Technics</p>
-              <p class="category">Accesorries</p>
+              <p class="category">Accessories</p>
             </div>
 
             <div class="price__container">
               <p class="set__price">Price</p>
-              <input class="min__price price" placeholder="Min Price"></input>
-              <input class="max__price price" placeholder="Max Price"></input>
+              <input class="min__price" placeholder="Min Price"></input>
+              <input class="max__price" placeholder="Max Price"></input>
               <button class="btn__filter">Filter</button>
             </div>
       </div>
@@ -228,13 +228,12 @@
       </div>
       <div class="product__container" id="product__container">
 
-
       </div>
     </div>
   </div>
 </div>
 
-<div class="newsletter__container">
+<div class="newsletter__container" id="newsletter">
   <div class="wrapper">
       <div class="newsletter__box">
           <p class="discount">Get Discount 35% off</p>
@@ -272,5 +271,7 @@
 <script src="js/slider.js"></script>
 <script src="js/toggle.js"></script>
 <script src="js/newsletter.js"></script>
+<script src="js/category.js"></script>
+<script src="js/sort.js"></script>
 </body>
 </html>

@@ -283,7 +283,7 @@ $grey: #f5f5f5;
         .price__container{
           @include row_space-between;
           width: 170px;
-          .price{
+          .min__price, .max__price{
             width: 80px;
             height: 30px;
             background: lightgrey;
@@ -298,6 +298,7 @@ $grey: #f5f5f5;
           height: 30px;
           border: none;
           margin-left: 30px;
+          cursor: pointer;
         }
       }
     }
@@ -513,7 +514,7 @@ $grey: #f5f5f5;
           font-size: 18px;
           margin-right: 20px;
           }
-          .price{
+          .min__price, .max__price{
           width: 30%;
           padding-left: 10px;
           height: 35px;

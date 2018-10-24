@@ -5,7 +5,8 @@
   font-family: Tahoma, sans-serif;
   list-style-type: none;
   text-decoration: none;
-  color: black; }
+  color: black;
+  scroll-behavior: smooth; }
 
 .nav {
   display: -webkit-box;
@@ -332,7 +333,7 @@
           -ms-flex-pack: justify;
           justify-content: space-between;
           width: 170px; }
-          .main .sidebar__menu .filter__container .filter__cont .price__container .price {
+          .main .sidebar__menu .filter__container .filter__cont .price__container .min__price, .main .sidebar__menu .filter__container .filter__cont .price__container .max__price {
             width: 80px;
             height: 30px;
             background: lightgrey;
@@ -344,7 +345,8 @@
           width: 60px;
           height: 30px;
           border: none;
-          margin-left: 30px; }
+          margin-left: 30px;
+          cursor: pointer; }
     .main .sidebar__menu .color__cont {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -574,7 +576,7 @@
       .main .content__container .price__container .set__price {
         font-size: 18px;
         margin-right: 20px; }
-      .main .content__container .price__container .price {
+      .main .content__container .price__container .min__price, .main .content__container .price__container .max__price {
         width: 30%;
         padding-left: 10px;
         height: 35px; }

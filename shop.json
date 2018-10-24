@@ -21,7 +21,7 @@
 
     {
       "name": "Dope Flower Scissors",
-      "category" : "Accesories",
+      "category" : "Accessories",
       "delivery": {
         "name": "48 godzin"
       },
@@ -36,7 +36,7 @@
 
     {
       "name": "Rolex Navigator Watch",
-      "category" : "Accesories",
+      "category" : "Accessories",
       "delivery": {
         "name": "48 godzin"
       },
@@ -96,7 +96,7 @@
 
     {
       "name": "Black Watch",
-      "category" : "Accesories",
+      "category" : "Accessories",
       "delivery": {
         "name": "48 godzin"
       },
@@ -243,7 +243,7 @@
       },
       "image": "https://raw.githubusercontent.com/michaelous/pics_json/master/red_chair.jpg"
     },
-	
+
 	{
       "name": "LED Bulb",
       "category" : "Lighting",

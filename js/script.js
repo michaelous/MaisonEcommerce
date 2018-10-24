@@ -6,10 +6,11 @@ function getAjax()  {
 
   xhr.onload = function() {
     if(this.status == 200){
-
       const res = JSON.parse(this.responseText);
-      let product_container = document.getElementById("product__container");
+
+        let product_container = document.getElementById("product__container");
         let list = global__list;
+
         if (typeof list !== 'undefined') {
           x = list;
           showprod= list + 6;
@@ -44,8 +45,10 @@ function getAjax()  {
         img = res.list[x].image;
         product.style.backgroundImage = "url('" + img + "')";
       }
-     }
-   }
+    }
+  }
+
+
 
   xhr.open('GET', 'shop.json', true);
   xhr.send();
@@ -53,7 +56,7 @@ function getAjax()  {
 
 getAjax();
 
-// after fist products loaded add LIST to SHOW products
+// 1,2,3 LIST to SHOW products
 var global__list;
 let list__container = document.createElement("div");
 list__container.setAttribute("class", "list__container");
@@ -76,7 +79,19 @@ for(var k=1;k<=3;k++){
    getAjax(global__list);
   });
 }
+// 1,2,3 END
 
+// show all products for both "Categories"
+var categories = document.getElementsByClassName('all_products');
+for (var i=0; i<categories.length; i++) {
+    categories[i].onclick = function (){
+      clear();
+      global__list = 0;
+      getAjax(global__list);
+    }
+}
+
+// clear
 function clear(){
   document.getElementById("product__container").innerHTML = "";
 };
