@@ -70,9 +70,10 @@
         }
         .toggleBtn{
           .hamburger{
+            top: calc(10%+12px);
             display: flex;
-            height: 35px;
-            width: 35px;
+            height: 33px;
+            width: 33px;
           }
         }
       }
