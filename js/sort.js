@@ -1,7 +1,7 @@
-const filter = document.getElementById("sort__filter");
+const filter = document.querySelector(".btn__filter");
 filter.addEventListener("click", function() {
-    let min = document.getElementById("min").value;
-    let max = document.getElementById("max").value;
+    let min = document.querySelector(".min__price").value;
+    let max = document.querySelector(".max__price").value;
     if (min.length == 0 || max.length == 0) {
         document.location.reload(true);
     }

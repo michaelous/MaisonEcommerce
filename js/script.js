@@ -81,9 +81,9 @@ for (let k = 1; k <= 3; k++) {
 // 1,2,3 END
 
 // show all products for both "Categories"
-const categories = document.getElementsByClassName('all_products');
-for (let i = 0; i < categories.length; i++) {
-    categories[i].onclick = function() {
+const all_categories = document.getElementsByClassName('all_products');
+for (let i = 0; i < all_categories.length; i++) {
+    all_categories[i].onclick = function() {
         clear();
         global__list = 0;
         getAjax(global__list);
